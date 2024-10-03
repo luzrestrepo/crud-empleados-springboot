@@ -27,29 +27,13 @@ Antes de comenzar, asegúrate de tener instalado:
    cd nombre-del-repositorio
    ```
 
-2. **Configura la base de datos MySQL**:
-
-   - Crea una base de datos llamada `empleadosDB` (o el nombre que prefieras).
-   - Asegúrate de tener el usuario y la contraseña configurados.
-
-3. **Configura las propiedades de la base de datos en `application.properties`**:
-   En el archivo `src/main/resources/application.properties`, agrega la configuración de conexión a MySQL:
-
-   ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/empleadosDB
-   spring.datasource.username=tu_usuario
-   spring.datasource.password=tu_contraseña
-   spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
-   spring.jpa.hibernate.ddl-auto=update
-   ```
-
-4. **Construye el proyecto**:
+2. **Construye el proyecto**:
 
    ```bash
    mvn clean install
    ```
 
-5. **Ejecuta la aplicación**:
+3. **Ejecuta la aplicación**:
    ```bash
    Java run
    ```
